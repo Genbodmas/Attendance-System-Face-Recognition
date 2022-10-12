@@ -7,6 +7,8 @@ import AdminBlock from './Components/AdminBlock/AdminBlock'
 import styled from 'styled-components'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './pages/login'
+import Home from './pages/home'
+import Admin from './pages/Admin'
 
 
 function Layout(){
@@ -42,8 +44,9 @@ function App() {
 	return (
 		<BrowserRouter>
 		<Routes>
-		  <Route index element={<Layout />} />
+		  <Route index element={<Home />} />
 		  <Route path="login" element={<Login />}/>
+		  <Route path="admin" element={<Admin />}/>
 		</Routes>
 	  </BrowserRouter>
 	)
