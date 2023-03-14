@@ -25,5 +25,7 @@ Base Url: ``` http://127.0.0.1:5000/ ```
 
 - /get_student_list: Returns all the student name in the designated folder: ```GET``` - ```http://127.0.0.1:5000/get_student_list```
 
-- /delete_student: Takes a student name as input and then deletes it from the designated folder: ```GET``` - ```http://127.0.0.1:5000/delete_student/:fullname``` 
+- /delete_student: Takes a student name as input and then deletes it from the designated folder: ```GET``` - ```http://127.0.0.1:5000/delete_student/:fullname```
+
+- /send_attendance_email: Takes a target email and frequency ( "daily" or "weekly" ) as string input and sends the attendance record from the database to the target email as a csv format: ```GET``` - ```http://127.0.0.1:5000/send_attendance_email/:email/:frequency```
 
