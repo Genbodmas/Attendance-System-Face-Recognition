@@ -84,4 +84,15 @@ export class Apiservice{
             throw error;
         }
     }
+
+    static async sendReportViaEmail (params){
+        try {
+            const res = await fetch(baseUrl+`/send_attendance_email/${params.email}/${params.frequency}`, {
+                method: "GET",
+            })
+            return res.data
+        } catch (error) {
+            throw error;
+        }
+    }
 }

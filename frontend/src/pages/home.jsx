@@ -63,9 +63,9 @@ export default function Home() {
       <Navbar />
 
       <div className="main_section_wrapper">
-        <Navbutton />
+        {/* <Navbutton /> */}
 
-        <div className="main_section">
+        <div className="main_section d-flex">
           {/* video feed section */}
           <div className="video_section">
             <div className="cards shadow rounded-lg  w-100 br">
